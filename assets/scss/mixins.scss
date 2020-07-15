@@ -1,0 +1,64 @@
+@mixin item {
+  padding: 5px 10px;
+  color: white;
+  list-style: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  &:hover {
+    cursor: pointer;
+    color: palegoldenrod;
+  }
+}
+
+@mixin card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  &__img {
+    padding-top: 5px;
+    width: calc(100% - 10px);
+    height: 120px;
+    object-fit: cover;
+  }
+  &__title {
+    padding: 10px 0 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+  &__subtitle {
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+}
+
+@mixin btn {
+  width: 100px;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+@mixin link {
+  text-transform: uppercase;
+  font-size: 14px;
+  &--1 {
+    color: slateblue;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  &--2 {
+    color: purple;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  &--3 {
+    color: skyblue;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+}
