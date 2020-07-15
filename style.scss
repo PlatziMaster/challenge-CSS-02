@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 $main-color: HONEYDEW;
+$color-1: ORCHID;
+$color-2: MEDIUMTURQUOISE;
+$color-3: SALMON;
+@mixin style-1 {
+  background: $main-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 body {
   margin: 0;
@@ -27,10 +36,7 @@ main {
 .card {
   border-radius: 15px;
   overflow: hidden;
-  background: $main-color;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include style-1;
   &__img {
     width: 200px;
     height: 120px;
@@ -55,10 +61,7 @@ main {
 /* Inicia Footer */
 
 footer {
-  background: $main-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include style-1;
   align-items: center;
   padding: 30px 0px;
 }
@@ -70,12 +73,12 @@ footer p {
 .social {
   margin: 15px 0px;
   &__facebook {
-    color: ORCHID;
+    color: $color-1;
   }
   &__instagram {
-    color: MEDIUMTURQUOISE;
+    color: $color-2;
   }
   &__twitter {
-    color: SALMON;
+    color: $color-3;
   }
 }
