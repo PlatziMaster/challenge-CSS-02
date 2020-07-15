@@ -1,6 +1,7 @@
 # 🎨 Challenge CSS 02
 
 SASS Practice
+Challenge done: https://mrdaniel01.github.io/challenge-CSS-02-scss/
 
 ## 🎨 ¿En qué consiste?
 
