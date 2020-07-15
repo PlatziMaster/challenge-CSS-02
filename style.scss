@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$main-color: HONEYDEW;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background: $main-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+main {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: $main-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+  }
+  &__subtitle {
+    margin-top: 0px;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  &__button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 3px solid $main-color; 
+  }
+}
+
+/* Inicia Footer */
+
+footer {
+  background: $main-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+footer p {
+  margin: 0px;
+}
+
+.social {
+  margin: 15px 0px;
+  &__facebook {
+    color: ORCHID;
+  }
+  &__instagram {
+    color: MEDIUMTURQUOISE;
+  }
+  &__twitter {
+    color: SALMON;
+  }
+}
