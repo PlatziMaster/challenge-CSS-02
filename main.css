@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background: #fff0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 20px;
+}
+
+main {
+  text-align: center;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff0f0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 0 5px 0 #f8a7a7;
+          box-shadow: 0 0 5px 0 #f8a7a7;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.card__img {
+  width: 200px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__subtitle {
+  margin-top: 0px;
+}
+
+.card__button {
+  padding: 10px 20px;
+  width: 100%;
+  border: 3px solid #f8a7a7;
+  background-color: #f8a7a7;
+  color: #fafafa;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff0f0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0px;
+}
+
+footer p {
+  margin: 0px;
+}
+
+.links {
+  margin: 15px 0px;
+}
+
+.links-1 {
+  color: ORCHID;
+}
+
+.links-2 {
+  color: MEDIUMTURQUOISE;
+}
+
+.links-3 {
+  color: SALMON;
+}
+/*# sourceMappingURL=main.css.map */
