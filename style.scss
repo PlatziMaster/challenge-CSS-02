@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+// Variables
+$principal: rgb(231,95,51);
+$linear-gradient: linear-gradient(180deg, rgba(244,142,88,1) 0%, rgba(231,95,51,1) 100%);
+$dark: #130E0D;
+$gray: #FBF5F3;
+
+
+$padding: 1.5em;
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  position: relative;
+  background: $gray;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  h1 {
+    // padding: $padding;
+    margin-left: $padding;
+    // font-weight: 900;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      list-style: none;
+      padding: $padding;
+      cursor: pointer;
+    }
+  }
+}
+
+.gradient {
+  background: $principal;
+  background: $linear-gradient;
+  width: 100%;
+  height: 375px;
+  position: absolute;
+  z-index: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+main {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 300px));
+  justify-content: center;
+  grid-gap: $padding;
+  color: $dark;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 12px 0px #0000008a;
+
+  &__img {
+    width: 100%;
+    height: 235px;
+    object-fit: cover;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__subtitle {
+    text-align: center;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: $padding;
+
+  &__button {
+    border: none;
+    padding: .5em $padding;
+    border-radius: 8px;
+    margin: $padding;
+    border: 1px solid $principal;
+    font-family: inherit;
+    color: $dark;
+    background: white;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      background: $principal;
+      color: white;
+    }
+  }
+}
+
+footer {
+  color: $dark;
+  text-align: center;
+}
+
+.links {
+  font-size: 2em;
+  margin: .5em;
+  a {
+    text-decoration: none;
+    color: $principal;
+  }
+}
