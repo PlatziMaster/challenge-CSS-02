@@ -26,6 +26,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   z-index: 1;
   h1 {
@@ -126,5 +127,38 @@ footer {
   a {
     text-decoration: none;
     color: $principal;
+  }
+}
+
+// Responsive---------------------------------
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: minmax(auto, 500px);
+    margin-top: 2em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    h1 {
+      font-size: 1.4em;
+    }
+    ul li {
+    font-size: .7em;
+    padding: .5em;
+    }
+  }
+
+  .cards {
+    grid-template-columns: minmax(auto, 300px);
+    margin-top: 2em;
+  }
+
+  .social {
+    display: block;
+    &__button {
+      display:block;
+      margin: 0 auto;
+    }
   }
 }

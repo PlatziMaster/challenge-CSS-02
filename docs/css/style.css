@@ -14,6 +14,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   z-index: 1;
 }
@@ -109,6 +110,35 @@ footer {
 .links a {
   text-decoration: none;
   color: #e75f33;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: minmax(auto, 500px);
+    margin-top: 2em;
+  }
+}
+@media screen and (max-width: 500px) {
+  header h1 {
+    font-size: 1.4em;
+  }
+  header ul li {
+    font-size: 0.7em;
+    padding: 0.5em;
+  }
+
+  .cards {
+    grid-template-columns: minmax(auto, 300px);
+    margin-top: 2em;
+  }
+
+  .social {
+    display: block;
+  }
+  .social__button {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
