@@ -64,15 +64,15 @@ Te dejo la siguiente documentación sobre BEM:
 
 <footer class="contact">
   
-  	<p class="contact__description">Gracias por visitarnos</p>
-  	<p class="contact__description">Estas son nuestras redes sociales</p>
+  <p class="contact__description">Gracias por visitarnos</p>
+  <p class="contact__description">Estas son nuestras redes sociales</p>
   
-  	<div class="contact__link">
-    	<a class="contact__link--face" href="/">Facebook</a>
-    	<a class="contact__link--insta" href="/">Instagram</a>
-   		<a class="contact__link--twit" href="/">Twitter</a>
+  <div class="contact__link">
+    <a class="contact__link--face" href="/">Facebook</a>
+    <a class="contact__link--insta" href="/">Instagram</a>
+   	<a class="contact__link--twit" href="/">Twitter</a>
     
-  	</div>
+  </div>
 </footer>
 
 ```
@@ -140,14 +140,14 @@ Puedes usar mixins con parámetros 🤫
 
 ```
 .contact {
-  	background: HONEYDEW;
-  	display: flex;
- 	  flex-direction: column;
- 	  justify-content: center;
-  	align-items: center;
-  	padding: 30px 0px;
+  	  background: HONEYDEW;
+  	  display: flex;
+ 	    flex-direction: column;
+ 	    justify-content: center;
+  	  align-items: center;
+  	  padding: 30px 0px;
   
-   		&__description {
+   	  &__description {
      		 	margin: 0px;
   		}
   		&__link{
