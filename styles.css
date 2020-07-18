@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background: #2E9C1E;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+header ul li {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: #2E9C1E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  box-shadow: 1px 1px 12px 0px #0000008a;
+}
+.card__img {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+}
+.card__subtitle {
+  margin-top: 0px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.social__button {
+  padding: 10px 20px;
+  margin: 0 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 1px 1px 12px 0px #0000008a;
+  cursor: pointer;
+  background-color: #2D5F9C;
+  border: 3px solid #2D5F9C;
+}
+.social__button:hover {
+  background-color: white;
+  color: #2D5F9C;
+}
+
+footer {
+  background: #2E9C1E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer p {
+  margin: 0px;
+}
+
+.pages {
+  margin: 15px 0px;
+}
+.pages__link {
+  color: #2D5F9C;
+}
+
+/*# sourceMappingURL=styles.css.map */
