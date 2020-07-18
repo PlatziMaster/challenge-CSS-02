@@ -18,6 +18,7 @@ header ul {
 }
 header ul li {
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 main {
@@ -63,8 +64,13 @@ main {
   color: white;
   font-weight: bold;
   box-shadow: 1px 1px 12px 0px #0000008a;
+  cursor: pointer;
   background-color: #2D5F9C;
   border: 3px solid #2D5F9C;
+}
+.social__button:hover {
+  background-color: white;
+  color: #2D5F9C;
 }
 
 footer {

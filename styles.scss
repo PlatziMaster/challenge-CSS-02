@@ -23,6 +23,7 @@ header {
 
     li {
       margin-right: 1rem;
+      cursor: pointer;
     }
   }
 }
@@ -70,10 +71,17 @@ main {
     color: white;
     font-weight: bold;
     box-shadow: $box-shadow;
+    cursor: pointer;
     background-color: $secondary-color;
     border: 3px solid $secondary-color;
+
+    &:hover {
+      background-color: white;
+      color: $secondary-color;
+    }
   }
 }
+
 footer {
   background: $primary-color;
   display: flex;
