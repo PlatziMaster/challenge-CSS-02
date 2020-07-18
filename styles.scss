@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$primary-color: #2E9C1E;
+$secondary-color: #2D5F9C;
+$box-shadow: 1px 1px 12px 0px #0000008a;
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      margin-right: 1rem;
+    }
+  }
+}
+
+main {
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  box-shadow: $box-shadow;
+
+  &__img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+  }
+  &__subtitle {
+    margin-top: 0px;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  &__button {
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: $box-shadow;
+    background-color: $secondary-color;
+    border: 3px solid $secondary-color;
+  }
+}
+
+footer {
+  background: $primary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  p {
+    margin: 0px;
+  }
+}
+
+.pages {
+  margin: 15px 0px;
+
+  &__link {
+    color: $secondary-color;
+  }
+}
