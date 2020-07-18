@@ -61,15 +61,20 @@ Te dejo la siguiente documentación sobre BEM:
   <button class="social__button">ARTICLES</button>
   <button class="social__button">SUBSCRIBE</button>
 </section>
-<footer>
-  <p>Gracias por visitarnos</p>
-  <p>Estas son nuestras redes sociales</p>
-  <div class="links">
-    <a class="link-1" href="/">Facebook</a>
-    <a class="link-2" href="/">Instagram</a>
-    <a class="link-3" href="/">Twitter</a>
-  </div>
+
+<footer class="contact">
+  
+  	<p class="contact__description">Gracias por visitarnos</p>
+  	<p class="contact__description">Estas son nuestras redes sociales</p>
+  
+  	<div class="contact__link">
+    	<a class="contact__link--face" href="/">Facebook</a>
+    	<a class="contact__link--insta" href="/">Instagram</a>
+   		<a class="contact__link--twit" href="/">Twitter</a>
+    
+  	</div>
 </footer>
+
 ```
 
 ### SASS hasta el momento:
@@ -134,34 +139,31 @@ main {
 Puedes usar mixins con parámetros 🤫
 
 ```
-footer {
-  background: HONEYDEW;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 0px;
+.contact {
+  	background: HONEYDEW;
+  	display: flex;
+ 	  flex-direction: column;
+ 	  justify-content: center;
+  	align-items: center;
+  	padding: 30px 0px;
+  
+   		&__description {
+     		 	margin: 0px;
+  		}
+  		&__link{
+      		margin: 15px 0px;
+     	&--face{
+        	color: ORCHID;
+     	}
+    	&--insta{
+        	color: MEDIUMTURQUOISE;
+     	}
+     	&--twit{
+        	color: SALMON;
+     	}
+   }
 }
 
-footer p {
-  margin: 0px;
-}
-
-.links {
-  margin: 15px 0px;
-}
-
-.link-1 {
-  color: ORCHID;
-}
-
-.link-2 {
-  color: MEDIUMTURQUOISE;
-}
-
-.link-3 {
-  color: SALMON;
-}
 ```
 
 ## 🎨 Pasos a seguir:
