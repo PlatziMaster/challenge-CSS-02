@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --bg-primary: HONEYDEW;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+@mixin flex($j-c) {
+  display: flex;
+  justify-content: $j-c;
+  flex-wrap: wrap;
+}
+
+@mixin padding($t-b, $l-r) {
+  padding: $t-b $l-r;
+}
+
+.header {
+  background: var(--bg-primary);
+  @include flex(space-between);
+  @include padding(0px, 20px);
+
+  &__navigation {
+    @include flex(space-evenly);
+    list-style: none;
+
+    &--item {
+      margin-left: 10px;
+    }
+  }
+}
+
+main {
+  text-align: center;
+}
+
+.cards {
+  @include flex(space-evenly);
+  margin-bottom: 30px;
+  margin: 10px;
+
+  .card {
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--bg-primary);
+    @include flex(center);
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    &__subtitle {
+      margin-top: 0px;
+    }
+  }
+}
+
+
+.social {
+  @include flex(space-evenly);
+  padding-bottom: 30px;
+
+  &__button {
+    @include padding(10px, 20px);
+    border-radius: 20px;
+    border: 3px solid var(--bg-primary);
+  }
+}
+
+footer {
+  background: var(--bg-primary);
+  @include flex(center);
+  flex-direction: column;
+  align-items: center;
+  @include padding(30px, 0px);
+
+  p {
+    margin: 0px;
+  }
+
+  .social-media {
+    margin: 15px 0px;
+
+    &__link {
+      text-decoration: none;
+      color: #343434;
+
+      &:hover {
+        color: blue;
+      }
+
+      .facebook {
+        color: ORCHID;
+      }
+
+      .instagram {
+        color: MEDIUMTURQUOISE;
+      }
+
+      .twitter {
+        color: SALMON;
+      }
+    }
+  }
+}
