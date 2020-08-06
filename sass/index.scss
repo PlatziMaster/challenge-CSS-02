@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$backgroundPrincipal: HONEYDEW;
+$colorEnlace1: ORCHID;
+$colorEnlace2: MEDIUMTURQUOISE;
+$colorEnlace3: SALMON;
+
+@mixin footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background: $backgroundPrincipal;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+main {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: $backgroundPrincipal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+  }
+  &__subtitle {
+    margin-top: 0px;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  &__button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 3px solid $backgroundPrincipal;
+  }
+}
+
+.footer {
+  background: $backgroundPrincipal;
+  @include footer;
+  &__paragraph {
+    margin: 0px;
+  }
+  &__links {
+    margin: 15px 0px;
+  }
+  &__link--1 {
+    color: $colorEnlace1;
+  }
+  &__link--2 {
+    color: $colorEnlace2;
+  }
+  &__link--3 {
+    color: $colorEnlace3;
+  }
+}
