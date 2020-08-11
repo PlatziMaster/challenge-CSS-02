@@ -1,0 +1,10 @@
+# Created by https://www.toptal.com/developers/gitignore/api/prepros
+# Edit at https://www.toptal.com/developers/gitignore?templates=prepros
+
+### Prepros ###
+# Config Prepros files to ignore
+prepros.cfg
+prepros-6.config
+prepros.config
+
+# End of https:
