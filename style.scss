@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+// Vars: 
+$links-colors: ("1":ORCHID,"2":MEDIUMTURQUOISE,"3":SALMON);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background: HONEYDEW;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+main {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: HONEYDEW;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+  }
+  &__subtitle {
+    margin-top: 0px;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  &__button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 3px solid HONEYDEW; 
+  }
+}
+
+footer {
+  background: HONEYDEW;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  & p{
+    margin: 0px;
+  }
+}
+
+.links {
+  margin: 15px 0px;
+}
+// Solution With Maps --> You can see line 3 for view color list 
+@each $link-name,$link-color in $links-colors {
+  .link--#{$link-name}{
+    color:$link-color;
+  }
+}
+
+// Solution With Mixins
+
+// @mixin link-color ($color){
+//   color: $color;
+// }
+
+// .link{
+//   &--1{
+//     @include link-color(ORCHID);
+//   }
+//   &--2{
+//     @include link-color(MEDIUMTURQUOISE);
+//   }
+//   &--3{
+//     @include link-color(SALMON);
+//   }
+// }
+
+
