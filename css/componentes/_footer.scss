@@ -1,0 +1,22 @@
+.footer {
+  //@extend son extensiones que podemos lograr de otros estilos, cuando se
+  //comparten los mismos estilos con otros elementos del sitio
+  //con @extend quiero que este selector tenga los mismos estilos que este selector en este caso
+  //centrar , tamaño de container y transformación en fuente
+  @extend .center;
+  @extend .size-container;
+  @extend .letter-transform;
+  /* color: $pink;
+  background-color: $white; */
+  font: {
+    size: 15px;
+    weight: bold;
+  }
+  p {
+    text-align: center;
+  }
+  span {
+    color: $green;
+  }
+  @include footer;
+}

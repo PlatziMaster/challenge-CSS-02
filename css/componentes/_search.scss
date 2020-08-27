@@ -1,0 +1,27 @@
+.search {
+  &__title {
+    @extend .center;
+    @extend .size-container;
+    @extend .letter-transform;
+    background-color: $green;
+    color: $white;
+    font: {
+      family: $font-arial;
+      size: 18px;
+    }
+  }
+  &__input {
+    background-color: $white;
+    display: grid;
+    grid-template-columns: 60px auto;
+    justify-items: center;
+    align-items: center;
+    input {
+      @extend .size-container;
+      border: 0px;
+      outline: none;
+      font-size: 18px;
+      letter-spacing: 5px;
+    }
+  }
+}
