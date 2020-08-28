@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poiret One", cursive;
+  color: white;
+  background-color: #f7f7cf;
+}
+
+header {
+  background: #040a13;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+header ul li {
+  list-style: none;
+  padding-right: 1em;
+}
+header ul li:hover {
+  text-decoration: underline;
+}
+
+main {
+  text-align: center;
+  margin: 5%;
+  color: #000;
+  font-size: xx-large;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: #040a13;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 4px 6px rgba(171, 167, 171, 0.48);
+}
+.card__img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+}
+.card__subtitle {
+  margin-top: 0px;
+}
+
+.card:hover {
+  box-shadow: 2px 4px 6px rgba(171, 167, 171, 0.48);
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+.social__button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 3px solid #040a13;
+  cursor: pointer;
+  outline: none;
+}
+.social__button:hover {
+  box-shadow: 2px 4px 6px rgba(171, 167, 171, 0.48);
+}
+
+footer {
+  background: #040a13;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  bottom: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer p {
+  margin: 0px;
+}
+
+.links {
+  margin: 15px 0px;
+}
+.links__link--orchid {
+  color: ORCHID;
+}
+.links__link--turquoise {
+  color: MEDIUMTURQUOISE;
+}
+.links__link--salmon {
+  color: SALMON;
+}
+
+/*# sourceMappingURL=index.css.map */
