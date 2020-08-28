@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+$card-color: #040a13;
+$base-color: #040a13;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poiret One", cursive;
+  color: white;
+  background-color: #f7f7cf;
+}
+
+header {
+  background: $base-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  & ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  & ul li {
+    list-style: none;
+    padding-right: 1em;
+  }
+  & ul li:hover {
+    text-decoration: underline;
+  }
+}
+
+main {
+  text-align: center;
+  margin: 5%;
+  color: #000;
+  font-size: xx-large;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: $card-color;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 4px 6px rgba(171, 167, 171, 0.48);
+  &__img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+  }
+  &__subtitle {
+    margin-top: 0px;
+  }
+}
+
+.card:hover {
+  box-shadow: 2px 4px 6px rgba(171, 167, 171, 0.48);
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  &__button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 3px solid $base-color;
+    cursor: pointer;
+    outline: none;
+  }
+  &__button:hover {
+    box-shadow: 2px 4px 6px rgba(171, 167, 171, 0.48);
+  }
+}
+
+footer {
+  background: $base-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  bottom: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  p {
+    margin: 0px;
+  }
+}
+
+.links {
+  margin: 15px 0px;
+  &__link--orchid {
+    color: ORCHID;
+  }
+  &__link--turquoise {
+    color: MEDIUMTURQUOISE;
+  }
+  &__link--salmon {
+    color: SALMON;
+  }
+}
