@@ -58,19 +58,19 @@ footer {
   align-items: center;
   padding: 30px 0px;
 }
-footer__p {
+footer p {
   margin: 0px;
 }
 
 .links {
   margin: 15px 0px;
 }
-.links__link-1 {
-  color: orchid;
+.links .link-1 {
+  color: ORCHID;
 }
-.links__link-2 {
-  color: MEDIUMTURQUOISE;
+.links .link-2 {
+  color: mediumturquoise;
 }
-.links__link-3 {
-  color: SALMON;
+.links .link-3 {
+  color: salmon;
 }

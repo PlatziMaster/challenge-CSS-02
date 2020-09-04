@@ -1,24 +1,24 @@
 footer {
-    background: HONEYDEW;
+    background: $color-primario;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px 0px;
-    &__p {
+    p {
         margin: 0px;
     }
   }
-
-  .links {
+.links {
     margin: 15px 0px;
-    &__link-1 {
-        color: orchid;
+    .link-1 {
+        color: ORCHID;
     }
-    &__link-2 {
-        color: MEDIUMTURQUOISE;
+    .link-2 {
+        color: mediumturquoise;
     }
-    &__link-3 {
-        color: SALMON;
+    .link-3 {
+        color: salmon;
     }
-  }
+ }
+ 
