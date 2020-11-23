@@ -17,18 +17,21 @@ main {
 }
 
 .cards {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
   margin-bottom: 30px;
 }
 
 .card {
+  width: 200px;
   border-radius: 15px;
   overflow: hidden;
   background: HONEYDEW;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5%;
 }
 .card__img {
   width: 200px;
