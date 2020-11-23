@@ -1,0 +1,10 @@
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    &__button {
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: 3px solid $color-primario; 
+    }
+  }

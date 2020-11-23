@@ -1,0 +1,22 @@
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    border-radius: 15px;
+    overflow: hidden;
+    background: $color-primario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+    }
+    &__subtitle {
+      margin-top: 0px;
+    }
+  }

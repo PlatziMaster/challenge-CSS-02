@@ -1,0 +1,24 @@
+footer {
+    background: $color-primario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    p {
+        margin: 0px;
+    }
+  }
+.links {
+    margin: 15px 0px;
+    .link-1 {
+        color: ORCHID;
+    }
+    .link-2 {
+        color: mediumturquoise;
+    }
+    .link-3 {
+        color: salmon;
+    }
+ }
+ 
